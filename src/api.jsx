@@ -9,7 +9,7 @@ const api = axios.create({
   },
 });
 
-const getAlbums = async () => {
+export const getAlbums = async () => {
   try {
     const response = await api.get("/albums");
     return response.data;
