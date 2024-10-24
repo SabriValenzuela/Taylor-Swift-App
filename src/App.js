@@ -1,18 +1,20 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Banner from "./components/Banner";
-import Cards from "./components/Cards";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ListSongs from "./components/ListSongs";
+import Home from "./Home";
+import Lyrics from "./components/SongsLyrics";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Banner />
-        <br />
-        <br />
-        <Cards />
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/album/:id" element={<ListSongs />} />
+          <Route path="/song/:song_id" element={<Lyrics />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
