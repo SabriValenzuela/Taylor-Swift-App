@@ -29,7 +29,7 @@ export default function Cards() {
             <div class="article-body">
               <h2>{item.title}</h2>
               <p>{item.release_date}</p>
-              <a href="#" class="read-more">
+              <a href={`/album/${item.album_id}`} class="read-more">
                 Ver canciones{" "}
                 <span class="sr-only">about this is some title</span>
               </a>
