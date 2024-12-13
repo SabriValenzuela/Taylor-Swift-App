@@ -5,7 +5,7 @@ export default function Banner() {
     <div>
       {/*       <img src="./header-ts3.jpg" alt="" />
        */}{" "}
-      <img src="./header-ts4.png" alt="" />
+      <img src="./header-ts4.png" alt="" height={300} />
     </div>
   );
 }
