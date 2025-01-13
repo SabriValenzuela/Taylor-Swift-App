@@ -47,7 +47,6 @@ export default function ListSongs() {
 
   const background = gradients[id];
 
-
   console.log(albums);
   console.log(albumTitles);
 
